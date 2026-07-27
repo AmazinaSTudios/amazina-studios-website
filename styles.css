@@ -197,14 +197,14 @@ a{ color:inherit; text-decoration:none; }
 .hero-actions{ display:flex; gap:18px; flex-wrap:wrap; }
 
 .hero-badge{
-  position:absolute; right:-60px; top:50%; transform:translateY(-50%);
-  width:420px; opacity:0.9;
+  position:absolute; right:40px; top:50%; transform:translateY(-50%);
+  width:380px; max-width:32vw; opacity:0.9;
   animation: spin-slow 60s linear infinite;
   pointer-events:none;
 }
 @keyframes spin-slow{ from{ transform:translateY(-50%) rotate(0deg);} to{ transform:translateY(-50%) rotate(360deg);} }
 
-@media (max-width:900px){
+@media (max-width:1150px){
   .hero-badge{ display:none; }
 }
 
